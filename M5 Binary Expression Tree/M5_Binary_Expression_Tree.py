@@ -12,6 +12,6 @@ class TreeNode:
     right: Optional['TreeNode'] = None
 
 class BinaryExpressionTree:
-    """ADT per spec: build from postfix; evaluate; infix & postfix traversals."""
+    "ADT per spec: build from postfix; evaluate; infix & postfix traversals."
     def __init__(self) -> None:
         self.root: Optional[TreeNode] = None
