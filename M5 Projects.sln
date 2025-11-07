@@ -5,6 +5,11 @@ VisualStudioVersion = 17.14.36616.10 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "M5 Binary Expression Tree", "M5 Binary Expression Tree\M5 Binary Expression Tree.pyproj", "{C03293BF-FC8E-4808-A9DB-AFC2D7DB6FE3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "M5 Binary Tree Traversals", "M5 Binary Tree Traversals", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+	ProjectSection(SolutionItems) = preProject
+		main.py = main.py
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
