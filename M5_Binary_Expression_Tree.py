@@ -105,5 +105,3 @@ class BinaryExpressionTree:
         if y == 0:
             raise ZeroDivisionError("Error. Division by Zero in Expression")
         return x / y
-
-    

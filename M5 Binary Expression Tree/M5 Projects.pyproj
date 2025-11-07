@@ -22,7 +22,6 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="M5_Binary_Expression_Tree.py" />
     <Compile Include="Expression Tree main.py" />
     <Compile Include="stack.py" />
   </ItemGroup>

@@ -98,5 +98,5 @@ def run_demo():
     print("Inorder:", " ".join(ino2))
     print("Postorder:", " ".join(post2))
 
-if __name__ == "__main__":
+if __name__ == "__Binary_Tree_Traversal_main__":
     run_demo()
