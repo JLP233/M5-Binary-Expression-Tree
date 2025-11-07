@@ -70,5 +70,40 @@ class BinaryExpressionTree:
         out: List[str] = []
         self._postorder(self.root, out)
         return " ".join(out)
+    
+    def _inorder(self, node: Optional[TreeNode], out: List[str]) -> None:
+        if node is None:
+            return
+        if node.value in OPERATORS:
+            out.append("(")
+            self._inorder(node.left, out)
+            out.append(f" {node.value} ")
+            self._inorder(node.right, out)
+            out.append(")")
+        else:
+            out.append(str(node.value))
+
+    def _postorder(self, node: Optional[TreeNode], out: List[str]) -> None:
+        if node is None:
+            return
+        self._postorder(node.left, out)
+        self._postorder(node.right, out)
+        out.append(str(node.value))
+
+    def _evaluate(self, node: TreeNode) -> float:
+        if node.value not in OPERATORS:
+            return float(node.value)
+        x = self._evaluate(node.left)
+        y = self._evaluate(node.right)
+        if node.value == "+":
+            return x + y
+        if node.value == "-":
+            return x - y
+        if node.value == "*":
+            return x * y
+        # division
+        if y == 0:
+            raise ZeroDivisionError("Error. Division by Zero in Expression")
+        return x / y
 
     
