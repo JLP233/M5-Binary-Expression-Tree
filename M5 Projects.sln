@@ -5,13 +5,6 @@ VisualStudioVersion = 17.14.36616.10 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "M5 Projects", "M5 Binary Expression Tree\M5 Projects.pyproj", "{C03293BF-FC8E-4808-A9DB-AFC2D7DB6FE3}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "M5 Binary Tree Traversals", "M5 Binary Tree Traversals", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
-	ProjectSection(SolutionItems) = preProject
-		Binary_Tree_Traversal_main.py = Binary_Tree_Traversal_main.py
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "M5 Hospital Triage System", "M5 Hospital Triage System", "{ED9584DE-2F3D-477E-8A84-BBBC67655F2B}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "M5 Binary Expression Tree", "M5 Binary Expression Tree", "{2EF32240-23FC-403F-90B2-67B9353C5FBA}"
 	ProjectSection(SolutionItems) = preProject
 		M5 Binary Expression Tree\Expression Tree main.py = M5 Binary Expression Tree\Expression Tree main.py
