@@ -5,7 +5,7 @@
     <ProjectGuid>c03293bf-fc8e-4808-a9db-afc2d7db6fe3</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>main.py</StartupFile>
+    <StartupFile>Expression Tree main.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -23,7 +23,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="M5_Binary_Expression_Tree.py" />
-    <Compile Include="main.py" />
+    <Compile Include="Expression Tree main.py" />
     <Compile Include="stack.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />

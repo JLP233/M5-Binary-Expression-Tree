@@ -56,3 +56,47 @@ def build_from_post_in(post: List[str], inorder_seq: List[str]) -> Optional[Node
         return root
     return helper(0, len(post)-1, 0, len(inorder_seq)-1)
 
+def sample_tree_for_traversals() -> Node:
+    n8 = Node("8")
+    n3 = Node("3"); n10 = Node("10")
+    n1 = Node("1"); n6 = Node("6"); n14 = Node("14")
+    n4 = Node("4"); n7 = Node("7"); n13 = Node("13")
+    n8.left, n8.right = n3, n10
+    n3.left, n3.right = n1, n6
+    n6.left, n6.right = n4, n7
+    n10.right = n14
+    n14.left = n13
+    return n8
+
+def run_demo():
+    root = sample_tree_for_traversals()
+    pre, ino, post = [], [], []
+    preorder(root, pre); inorder(root, ino); postorder(root, post)
+    print("Preorder:", " ".join(pre))
+    print("Inorder:", " ".join(ino))
+    print("Postorder:", " ".join(post))
+    print()
+
+    pre_seq = "Q W E R T Y U I".split()
+    in_seq  = "E W T R Q Y U I".split()
+    r1 = build_from_pre_in(pre_seq, in_seq)
+    pre1, ino1, post1 = [], [], []
+    preorder(r1, pre1); inorder(r1, ino1); postorder(r1, post1)
+    print("Reconstructed (Pre+In) Traversals:")
+    print("Preorder:", " ".join(pre1))
+    print("Inorder:", " ".join(ino1))
+    print("Postorder:", " ".join(post1))
+    print()
+
+    post_seq = "J I L M N K H".split()
+    in2_seq  = "J I H L K M N".split()
+    r2 = build_from_post_in(post_seq, in2_seq)
+    pre2, ino2, post2 = [], [], []
+    preorder(r2, pre2); inorder(r2, ino2); postorder(r2, post2)
+    print("Reconstructed (Post+In) Traversals:")
+    print("Preorder:", " ".join(pre2))
+    print("Inorder:", " ".join(ino2))
+    print("Postorder:", " ".join(post2))
+
+if __name__ == "__main__":
+    run_demo()
